@@ -1,0 +1,61 @@
+<div class="mt-20 flex justify-center">
+  <button
+    class="rounded-full border border-[#424242] w-[36px] h-[35px] mt-[7px] flex justify-center items-center"
+    routerLink="/"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+      />
+    </svg>
+  </button>
+
+  <!-- <h1 class="text-[#bdbdbd] ml-3 mt-1 text-3xl font-light">Text Editor</h1> -->
+
+  <div class="ml-4">
+    <quill-editor
+      class="content-editor"
+      [placeholder]="''"
+      [modules]="quillConfiguration"
+      [styles]="{
+        'min-height': '500px',
+        'font-size': '15px'
+      }"
+      (onContentChanged)="contentChanged($event)"
+      (onEditorCreated)="created($event)"
+    >
+    </quill-editor>
+  </div>
+</div>
+
+<!-- <div quill-editor-toolbar>
+        <span class="ql-formats">
+          <button class="ql-bold" [title]="'Bold'"></button>
+        </span>
+        <span class="ql-formats">
+          <select class="ql-align" [title]="'Aligment'">
+            <option selected></option>
+            <option value="center"></option>
+            <option value="right"></option>
+            <option value="justify"></option>
+          </select>
+          <select class="ql-align" [title]="'Aligment2'">
+            <option selected></option>
+            <option value="center"></option>
+            <option value="right"></option>
+            <option value="justify"></option>
+          </select>
+        </span>
+      </div> -->
+<!-- border: 'none', -->
+<!-- <quill-editor class="content-editor" [placeholder]="''"> </quill-editor> -->
+<!-- <quill-editor></quill-editor> -->

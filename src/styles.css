@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~quill/dist/quill.bubble.css";
+@import "~quill/dist/quill.snow.css";
+
+.ql-toolbar.ql-snow {
+  /* border: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ql-toolbar.ql-snow .ql-formats button {
+  border-radius: 50%;
+  width: 36px;
+  height: 35px;
+  line-height: 30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ql-toolbar.ql-snow .ql-formats {
+  margin-left: 10px;
+}
+
+.ql-toolbar.ql-snow .ql-formats button svg {
+  width: 20px;
+}
+
+.ql-toolbar.ql-snow .ql-formats button:hover {
+  background-color: #f2f0f0;
+  transform: scale(1.1);
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-align .ql-picker-label {
+  border-radius: 50%;
+  width: 27px;
+  height: 25px;
+  line-height: 30px;
+  /* margin-left: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-align .ql-picker-label svg {
+  width: 20px;
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-align .ql-picker-label:hover {
+  background-color: #f2f0f0;
+  transform: scale(1.5);
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-color .ql-picker-label {
+  border-radius: 50%;
+  width: 27px;
+  height: 25px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-color .ql-picker-label svg {
+  width: 20px;
+  /* background-color: red; */
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-color .ql-picker-label:hover {
+  background-color: #f2f0f0;
+  transform: scale(1.5);
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-background .ql-picker-label {
+  border-radius: 50%;
+  width: 27px;
+  height: 25px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-background .ql-picker-label svg {
+  width: 20px;
+}
+
+.ql-toolbar.ql-snow .ql-formats .ql-background .ql-picker-label:hover {
+  background-color: #f2f0f0;
+  transform: scale(1.5);
+}
+
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 2px;
+}
+
+/* .ql-snow .ql-picker.ql-header {
+  width: 100px;
+} */
+
+/* 
+.ql-toolbar.ql-snow .ql-formats .ql-align {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  margin-left: 10px;
+} */
